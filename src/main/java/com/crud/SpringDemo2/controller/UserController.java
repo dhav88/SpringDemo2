@@ -27,6 +27,7 @@ public class UserController {
 	@GetMapping("/list")
 	public ResponseEntity<List<UserDTO>> getAllUsersList(){
 		List<UserDTO> users = userServiceImpl.getAllUsers();
+		System.out.println("Git changes to commit First time");
 		return new ResponseEntity<>(users,HttpStatus.OK);
 	}
 	
