@@ -23,6 +23,7 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public List<UserDTO> getAllUsers() {
+		System.out.println("Get all users Dhaval");
 		List<User> users = userRepository.findAll();
 		List<UserDTO> userDTOS = new ArrayList<>();
 		for(User user : users) {
